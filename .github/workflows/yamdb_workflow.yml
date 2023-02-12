@@ -19,6 +19,8 @@ jobs:
 
     - name: Test with flake8
       run: |
+        touch .env
+        pytest
         python -m flake8
 
   build_and_push_to_docker_hub:
@@ -55,7 +57,6 @@ jobs:
         script: |
           sudo docker-compose stop
           sudo docker-compose rm web
-          touch .env
           echo SECRET_KEY=${{ secrets.SECRET_KEY}} >> .env
           echo DB_ENGINE=${{ secrets.DB_ENGINE }} >> .env
           echo DB_NAME=${{ secrets.DB_NAME }} >> .env
