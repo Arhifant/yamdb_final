@@ -20,6 +20,7 @@ jobs:
     - name: Test with flake8
       run: |
         touch .env
+        echo SECRET_KEY=${{ secrets.SECRET_KEY}} >> .env
         pytest
         python -m flake8
 
@@ -57,7 +58,6 @@ jobs:
         script: |
           sudo docker-compose stop
           sudo docker-compose rm web
-          echo SECRET_KEY=${{ secrets.SECRET_KEY}} >> .env
           echo DB_ENGINE=${{ secrets.DB_ENGINE }} >> .env
           echo DB_NAME=${{ secrets.DB_NAME }} >> .env
           echo POSTGRES_USER=${{ secrets.POSTGRES_USER }} >> .env
