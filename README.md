@@ -5,7 +5,7 @@
 
 ## Статус workflow:
 
-![Yamdb workflow](https://github.com/github/yamdb_final/actions/workflows/yamdb_workflow.yml/badge.svg)
+![Yamdb workflow](https://github.com/Arhifant/yamdb_final/actions/workflows/yamdb_workflow.yml/badge.svg)
 
 ## Дополнительно
 
