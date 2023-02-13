@@ -10,7 +10,6 @@ services:
       - ./.env
   web:
     image: arhifant/yamdb
-    build: ../infra/
     restart: always
     volumes:
       - static_value:/app/static/
