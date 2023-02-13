@@ -1,0 +1,6 @@
+id,password,is_superuser,username,first_name,last_name,email,role,bio
+100,123,0,bingobongo,bi,go,bingobongo@yamdb.fake,user,interesting
+101,123,0,capt_obvious,capt,obvious,capt_obvious@yamdb.fake,admin,interesting
+102,123,0,faust,fau,goete,faust@yamdb.fake,user,interesting
+103,123,0,reviewer,revi,ever,reviewer@yamdb.fake,user,interesting
+104,123,0,angry,ann,gray,angry@yamdb.fake,moderator,interesting
